@@ -17,7 +17,7 @@ export async function loadXLSX() {
 
 export default class ExcelService extends Service {
   async XLSX() {
-    return await loadXLSX();
+    return loadXLSX();
   }
 
   async export(data, options) {
