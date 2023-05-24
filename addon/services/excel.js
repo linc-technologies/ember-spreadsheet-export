@@ -65,8 +65,9 @@ export default class ExcelService extends Service {
           if (range.e.c < C) {
             range.e.c = C;
           }
-          let cell = { v: data[R][C] };
-          if (cell.v == null) {
+          let cellValue = data[R][C];
+          let cell = { v: cellValue };
+          if (cellValue.v == null) {
             continue;
           }
           let cell_ref = XLSX.utils.encode_cell({ c: C, r: R });
@@ -82,6 +83,9 @@ export default class ExcelService extends Service {
           } else {
             cell.t = 's';
           }
+
+          //support passing more cell options
+          cell = options.callbackPerCell?.(cellValue, cell) || cell;
 
           ws[cell_ref] = cell;
         }
