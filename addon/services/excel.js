@@ -1,6 +1,5 @@
 import Service from '@ember/service';
 import { saveAs } from 'file-saver';
-import XLSX from 'xlsx';
 import optionize from '../utils/utils';
 
 const defaultConfig = {
@@ -12,8 +11,17 @@ const defaultConfig = {
   tableParseOptions: {},
 };
 
+async function loadXLSX() {
+  return await import('xlsx').then((module) => module.default);
+}
+
 export default class ExcelService extends Service {
-  export(data, options) {
+  async XLSX() {
+    return await loadXLSX();
+  }
+
+  async export(data, options) {
+    const XLSX = await this.XLSX();
     options = optionize(options, defaultConfig);
 
     function s2ab(s) {
@@ -78,6 +86,7 @@ export default class ExcelService extends Service {
           ws[cell_ref] = cell;
         }
       }
+
       if (range.s.c < 10000000) {
         ws['!ref'] = XLSX.utils.encode_range(range);
       }
@@ -119,7 +128,7 @@ export default class ExcelService extends Service {
     });
 
     let output = new Blob([s2ab(wbout)], { type: 'application/octet-stream' });
-    
+
     if (options.download) {
       saveAs(output, options.fileName);
     }
