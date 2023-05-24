@@ -12,7 +12,7 @@ const defaultConfig = {
 };
 
 export async function loadXLSX() {
-  return await import('xlsx');
+  return import('xlsx');
 }
 
 export default class ExcelService extends Service {
