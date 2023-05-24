@@ -5,6 +5,13 @@ Addon that encapsulates ability to render a data set as either excel or csv.
 
 Forked from [roofstock/ember-cli-data-export](https://github.com/roofstock/ember-cli-data-export).
 
+First you need to install your own copy of xlsx and file-saver, these are peerDependencies to let you choose the version.
+
+In order to see which peerDependencies are needed you can run the command
+
+```
+npm info ember-spreadsheet-export peerDependencies
+```
 
 Differences from `ember-cli-data-export` include:
 ------------------------------------------------------------------------------

@@ -3,8 +3,9 @@
 module.exports = {
   name: require('./package').name,
 
-  included(app) {
-    this._super.included.apply(this, arguments);
-    app.import('vendor/Blob.js');
+  options: {
+    babel: {
+      plugins: [require.resolve('ember-auto-import/babel-plugin')],
+    },
   },
 };

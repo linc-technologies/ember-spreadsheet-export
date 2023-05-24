@@ -1,6 +1,5 @@
 import Service from '@ember/service';
 import { saveAs } from 'file-saver';
-import XLSX from 'xlsx';
 import optionize from '../utils/utils';
 
 const defaultConfig = {
@@ -12,8 +11,17 @@ const defaultConfig = {
   tableParseOptions: {},
 };
 
+export async function loadXLSX() {
+  return import('xlsx');
+}
+
 export default class ExcelService extends Service {
-  export(data, options) {
+  async XLSX() {
+    return loadXLSX();
+  }
+
+  async export(data, options) {
+    const XLSX = await this.XLSX();
     options = optionize(options, defaultConfig);
 
     function s2ab(s) {
@@ -57,8 +65,9 @@ export default class ExcelService extends Service {
           if (range.e.c < C) {
             range.e.c = C;
           }
-          let cell = { v: data[R][C] };
-          if (cell.v == null) {
+          let cellValue = data[R][C];
+          let cell = { v: cellValue };
+          if (cellValue.v == null) {
             continue;
           }
           let cell_ref = XLSX.utils.encode_cell({ c: C, r: R });
@@ -75,9 +84,13 @@ export default class ExcelService extends Service {
             cell.t = 's';
           }
 
+          //support passing more cell options
+          cell = options.callbackPerCell?.(cellValue, cell) || cell;
+
           ws[cell_ref] = cell;
         }
       }
+
       if (range.s.c < 10000000) {
         ws['!ref'] = XLSX.utils.encode_range(range);
       }
@@ -119,7 +132,7 @@ export default class ExcelService extends Service {
     });
 
     let output = new Blob([s2ab(wbout)], { type: 'application/octet-stream' });
-    
+
     if (options.download) {
       saveAs(output, options.fileName);
     }

@@ -34,10 +34,10 @@ export default class ApplicationController extends Controller {
   }
 
   @action downloadTableAsXLSX() {
-    this.excel.export(
-      document.querySelector('#demoTable1'),
-      { sheetName: 'Table 1', fileName: 'demo-table.xlsx' }
-    );
+    this.excel.export(document.querySelector('#demoTable1'), {
+      sheetName: 'Table 1',
+      fileName: 'demo-table.xlsx',
+    });
   }
 
   @action downloadTablesAsXLSX() {
@@ -50,11 +50,17 @@ export default class ApplicationController extends Controller {
         name: 'Table 2',
         data: document.querySelector('#demoTable2'),
       },
-    ]
-    this.excel.export(tables, { multiSheet: true, fileName: 'demo-tables.xlsx' });
+    ];
+    this.excel.export(tables, {
+      multiSheet: true,
+      fileName: 'demo-tables.xlsx',
+    });
   }
 
   @action downloadMultiSheetXLSX() {
-    this.excel.export(sheets, { multiSheet: true, fileName: 'demo-multisheet.xlsx' });
+    this.excel.export(sheets, {
+      multiSheet: true,
+      fileName: 'demo-multisheet.xlsx',
+    });
   }
 }
