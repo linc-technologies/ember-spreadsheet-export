@@ -11,8 +11,8 @@ const defaultConfig = {
   tableParseOptions: {},
 };
 
-async function loadXLSX() {
-  return await import('xlsx').then((module) => module.default);
+export async function loadXLSX() {
+  return await import('xlsx');
 }
 
 export default class ExcelService extends Service {
