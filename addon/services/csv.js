@@ -1,6 +1,7 @@
 import Service from '@ember/service';
 import { saveAs } from 'file-saver';
-import optionize from '../utils/utils';
+import { Blob } from 'blob-polyfill';
+import optionize from "../utils/utils";
 
 const defaultConfig = {
   download: true,
