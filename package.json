@@ -1,6 +1,6 @@
 {
-  "name": "ember-spreadsheet-export",
-  "version": "0.6.0",
+  "name": "@linc-technologies/ember-spreadsheet-export",
+  "version": "0.8.0",
   "description": "Provides ability to export a set of json data as excel or csv file.",
   "keywords": [
     "ember-addon",
@@ -10,18 +10,16 @@
     "csv",
     "spreadsheet"
   ],
-  "repository": "https://github.com/pauln/ember-spreadsheet-export",
+  "repository": "https://github.com/linc-technologies/ember-spreadsheet-export",
   "license": "MIT",
-  "author": "Matt Armstrong",
-  "contributors": [
-    "Paul Nicholls"
-  ],
+  "author": "Paul Nicholls <pauln@linc-ed.com>",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
   "scripts": {
     "build": "ember build --environment=production",
+    "ci": "yarn install --ignore-engines --frozen-lockfile",
     "lint": "npm-run-all --aggregate-output --continue-on-error --parallel \"lint:!(fix)\"",
     "lint:fix": "npm-run-all --aggregate-output --continue-on-error --parallel lint:*:fix",
     "lint:hbs": "ember-template-lint .",
@@ -38,7 +36,7 @@
     "ember-cli-babel": "^7.26.6",
     "ember-cli-htmlbars": "^5.7.1",
     "file-saver": "^2.0.5",
-    "xlsx": "^0.17.0"
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@ember/optional-features": "^2.0.0",

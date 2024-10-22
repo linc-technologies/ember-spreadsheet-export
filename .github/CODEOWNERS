@@ -1,0 +1,9 @@
+# GitHub Code Owners
+# More info about this file can be found in the GitHub documentation:
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners#codeowners-syntax
+
+# Default reviewers for all files
+*               @linc-technologies/frontend
+
+# Request a review from the devops team members for CI/CD related changes
+.github/        @linc-technologies/devops

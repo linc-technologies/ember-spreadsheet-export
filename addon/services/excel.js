@@ -119,7 +119,7 @@ export default class ExcelService extends Service {
     });
 
     let output = new Blob([s2ab(wbout)], { type: 'application/octet-stream' });
-    
+
     if (options.download) {
       saveAs(output, options.fileName);
     }

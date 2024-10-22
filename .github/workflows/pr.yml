@@ -1,0 +1,14 @@
+name: "PR"
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint:
+    uses: linc-technologies/.github/.github/workflows/ember_lint.yml@main
+    secrets: inherit
+    with:
+      node_version: '14.21'
+      continue-on-error: false
