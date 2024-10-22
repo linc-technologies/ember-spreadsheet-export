@@ -10,5 +10,5 @@ jobs:
     uses: linc-technologies/.github/.github/workflows/ember_lint.yml@main
     secrets: inherit
     with:
-      node_version: '14.21'
+      node_version: '16.20'
       continue-on-error: false
