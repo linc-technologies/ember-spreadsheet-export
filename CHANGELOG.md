@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.9.0](https://github.com/linc-technologies/ember-spreadsheet-export/compare/ember-spreadsheet-export-v0.8.1...ember-spreadsheet-export-v0.9.0) (2024-10-23)
+
+
+### Features
+
+* **deps:** migrates to sheetjs cdn. ([55698e9](https://github.com/linc-technologies/ember-spreadsheet-export/commit/55698e9530b3ec690ffb888e8a94ca8a327e22e0))
+* upgrades to `xlsx@0.20.3` via CDN ([#46](https://github.com/linc-technologies/ember-spreadsheet-export/issues/46)) ([55698e9](https://github.com/linc-technologies/ember-spreadsheet-export/commit/55698e9530b3ec690ffb888e8a94ca8a327e22e0))
+
 ## [0.8.1](https://github.com/linc-technologies/ember-spreadsheet-export/compare/ember-spreadsheet-export-v0.8.0...ember-spreadsheet-export-v0.8.1) (2024-10-23)
 
 
