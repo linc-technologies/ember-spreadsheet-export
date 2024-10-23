@@ -1,6 +1,6 @@
 {
   "name": "@linc-technologies/ember-spreadsheet-export",
-  "version": "0.11.0",
+  "version": "0.12.0",
   "description": "Provides ability to export a set of json data as excel or csv file.",
   "keywords": [
     "ember-addon",
