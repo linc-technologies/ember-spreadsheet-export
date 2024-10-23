@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.11.0](https://github.com/linc-technologies/ember-spreadsheet-export/compare/ember-spreadsheet-export-v0.10.0...ember-spreadsheet-export-v0.11.0) (2024-10-23)
+
+
+### Features
+
+* upgrades to `ember@4.8`. (HERO-10268) ([#39](https://github.com/linc-technologies/ember-spreadsheet-export/issues/39)) ([e96353f](https://github.com/linc-technologies/ember-spreadsheet-export/commit/e96353fdce63c3168efc41e87049795d0ebbb999))
+
 ## [0.10.0](https://github.com/linc-technologies/ember-spreadsheet-export/compare/ember-spreadsheet-export-v0.9.0...ember-spreadsheet-export-v0.10.0) (2024-10-23)
 
 
