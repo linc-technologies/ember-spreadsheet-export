@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.13.0](https://github.com/linc-technologies/ember-spreadsheet-export/compare/ember-spreadsheet-export-v0.12.0...ember-spreadsheet-export-v0.13.0) (2024-10-23)
+
+
+### ⚠ BREAKING CHANGES
+
+* removes Blob polyfill in favour of native browser support.
+
+### Features
+
+* removes Blob polyfill in favour of native browser support. ([0d8225f](https://github.com/linc-technologies/ember-spreadsheet-export/commit/0d8225fb18c244a4233c3b592510f2e422256cff))
+* upgrades to `ember@5.4`. ([9b67ea3](https://github.com/linc-technologies/ember-spreadsheet-export/commit/9b67ea33dbab9f5cbe10f386a7d2706341a457f9))
+
 ## [0.12.0](https://github.com/linc-technologies/ember-spreadsheet-export/compare/ember-spreadsheet-export-v0.11.0...ember-spreadsheet-export-v0.12.0) (2024-10-23)
 
 
