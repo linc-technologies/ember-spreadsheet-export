@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.8.1](https://github.com/linc-technologies/ember-spreadsheet-export/compare/ember-spreadsheet-export-v0.8.0...ember-spreadsheet-export-v0.8.1) (2024-10-23)
+
+
+### Bug Fixes
+
+* removes initialize re-export ([#17](https://github.com/linc-technologies/ember-spreadsheet-export/issues/17)) ([2e6d650](https://github.com/linc-technologies/ember-spreadsheet-export/commit/2e6d650b9d062b1a10c48702d2cf009f58a41869))
+
 ## [0.8.0](https://github.com/linc-technologies/ember-spreadsheet-export/compare/ember-spreadsheet-export-v0.7.0...ember-spreadsheet-export-v0.8.0) (2024-10-22)
 
 
