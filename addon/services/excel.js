@@ -1,7 +1,7 @@
 import Service from '@ember/service';
+import optionize from '@linc-technologies/ember-spreadsheet-export/utils/utils';
 import { saveAs } from 'file-saver';
 import XLSX from 'xlsx';
-import optionize from '../utils/utils';
 
 const defaultConfig = {
   sheetName: 'Sheet1',

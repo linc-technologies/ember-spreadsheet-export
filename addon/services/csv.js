@@ -1,6 +1,6 @@
 import Service from '@ember/service';
+import optionize from '@linc-technologies/ember-spreadsheet-export/utils/utils';
 import { saveAs } from 'file-saver';
-import optionize from '../utils/utils';
 
 const defaultConfig = {
   download: true,
