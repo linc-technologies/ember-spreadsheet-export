@@ -1,5 +1,5 @@
 import Service from '@ember/service';
-import optionize from '@linc-technologies/ember-spreadsheet-export/utils/utils';
+import optionize from '../utils/utils.js';
 import { saveAs } from 'file-saver';
 import XLSX from 'xlsx';
 

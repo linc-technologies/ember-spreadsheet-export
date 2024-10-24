@@ -1,0 +1,87 @@
+{
+  "name": "@linc-technologies/ember-spreadsheet-export",
+  "version": "0.15.0",
+  "description": "Provides ability to export a set of json data as excel or csv file.",
+  "keywords": [
+    "ember-addon",
+    "ember-cli",
+    "xlsx",
+    "excel",
+    "csv",
+    "spreadsheet"
+  ],
+  "repository": "https://github.com/linc-technologies/ember-spreadsheet-export",
+  "license": "MIT",
+  "author": "Paul Nicholls <pauln@linc-ed.com>",
+  "directories": {
+    "doc": "doc",
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "rollup --config",
+    "lint": "concurrently 'yarn:lint:*(!fix)' --names 'lint:'",
+    "lint:fix": "concurrently 'yarn:lint:*:fix' --names 'fix:'",
+    "lint:hbs": "ember-template-lint . --no-error-on-unmatched-pattern",
+    "lint:hbs:fix": "ember-template-lint . --fix --no-error-on-unmatched-pattern",
+    "lint:js": "eslint . --cache",
+    "lint:js:fix": "eslint . --fix",
+    "prepack": "rollup --config",
+    "start": "rollup --config --watch",
+    "test": "echo 'A v2 addon does not have tests, run tests in test-app'"
+  },
+  "dependencies": {
+    "@babel/core": "^7.25.2",
+    "@embroider/addon-shim": "^1.8.9",
+    "decorator-transforms": "^2.0.0",
+    "file-saver": "^2.0.5",
+    "xlsx": "https://git.sheetjs.com/sheetjs/sheetjs.git#^0.20.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/eslint-parser": "^7.25.1",
+    "@babel/runtime": "^7.25.0",
+    "@embroider/addon-dev": "^5.0.0",
+    "@rollup/plugin-babel": "^6.0.4",
+    "babel-plugin-ember-template-compilation": "^2.2.5",
+    "concurrently": "^8.2.2",
+    "ember-template-lint": "^6.0.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-ember": "^12.1.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^17.10.2",
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "^3.3.3",
+    "rollup": "^4.20.0",
+    "rollup-plugin-copy": "^3.5.0"
+  },
+  "peerDependencies": {
+    "ember-source": "^4.0.0"
+  },
+  "engines": {
+    "node": ">= 18"
+  },
+  "ember": {
+    "edition": "octane"
+  },
+  "ember-addon": {
+    "app-js": {
+      "./services/csv.js": "./dist/_app_/services/csv.js",
+      "./services/excel.js": "./dist/_app_/services/excel.js"
+    },
+    "main": "addon-main.cjs",
+    "type": "addon",
+    "version": 2
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "./*": "./dist/*.js",
+    "./utils/*": "./dist/utils/*.js",
+    "./addon-main.js": "./addon-main.cjs"
+  },
+  "files": [
+    "addon-main.cjs",
+    "blueprints",
+    "dist"
+  ]
+}
