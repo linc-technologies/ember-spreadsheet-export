@@ -67,7 +67,7 @@ export default class ExcelService extends Service {
           }
           let cellValue = data[R][C];
           let cell = { v: cellValue };
-          if (cellValue.v == null) {
+          if (cell.v == null) {
             continue;
           }
           let cell_ref = XLSX.utils.encode_cell({ c: C, r: R });
