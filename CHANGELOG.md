@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.16.0](https://github.com/linc-technologies/ember-spreadsheet-export/compare/ember-spreadsheet-export-v0.15.0...ember-spreadsheet-export-v0.16.0) (2024-11-26)
+
+
+### Features
+
+* change to source xlsx from git ([f7e37b0](https://github.com/linc-technologies/ember-spreadsheet-export/commit/f7e37b059ad2e06d38d339f456616f7c3d766bb7))
+
 ## [0.15.0](https://github.com/linc-technologies/ember-spreadsheet-export/compare/ember-spreadsheet-export-v0.14.0...ember-spreadsheet-export-v0.15.0) (2024-10-23)
 
 
