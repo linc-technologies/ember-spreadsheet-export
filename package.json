@@ -91,5 +91,8 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
+  },
+  "resolutions": {
+    "cross-spawn": "7.0.5"
   }
 }
