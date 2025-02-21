@@ -91,5 +91,11 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
+  },
+  "resolutions": {
+    "cross-spawn": "7.0.5",
+    "path-to-regexp": "0.1.12",
+    "ansi-html": "0.0.8",
+    "braces": "3.0.3"
   }
 }
