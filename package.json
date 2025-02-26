@@ -97,6 +97,7 @@
     "path-to-regexp": "0.1.12",
     "ansi-html": "0.0.8",
     "braces": "3.0.3",
-    "micromatch": "4.0.8"
+    "micromatch": "4.0.8",
+    "got": "11.8.5"
   }
 }
