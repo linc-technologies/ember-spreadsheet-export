@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.16.1](https://github.com/linc-technologies/ember-spreadsheet-export/compare/ember-spreadsheet-export-v0.16.0...ember-spreadsheet-export-v0.16.1) (2025-09-14)
+
+
+### Bug Fixes
+
+* resolve brace-expansion to 2.0.2 ([770cda8](https://github.com/linc-technologies/ember-spreadsheet-export/commit/770cda8b28abbe9b4c31b1e1e5fc34e6b0c84a57))
+
 ## [0.16.0](https://github.com/linc-technologies/ember-spreadsheet-export/compare/ember-spreadsheet-export-v0.15.0...ember-spreadsheet-export-v0.16.0) (2024-11-26)
 
 
