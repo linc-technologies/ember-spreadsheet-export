@@ -99,6 +99,7 @@
     "got": "11.8.5",
     "micromatch": "4.0.8",
     "path-to-regexp": "0.1.12",
-    "brace-expansion": "2.0.2"
+    "brace-expansion": "2.0.2",
+    "on-headers": "1.1.0"
   }
 }
