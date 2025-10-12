@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.16.2](https://github.com/linc-technologies/ember-spreadsheet-export/compare/ember-spreadsheet-export-v0.16.1...ember-spreadsheet-export-v0.16.2) (2025-10-12)
+
+
+### Bug Fixes
+
+* **HERO-11977:** CVE mitigation ([#64](https://github.com/linc-technologies/ember-spreadsheet-export/issues/64)) ([7925f5b](https://github.com/linc-technologies/ember-spreadsheet-export/commit/7925f5b1b0b2105623c7720627e03ec24befc0e1))
+
 ## [0.16.1](https://github.com/linc-technologies/ember-spreadsheet-export/compare/ember-spreadsheet-export-v0.16.0...ember-spreadsheet-export-v0.16.1) (2025-09-14)
 
 
