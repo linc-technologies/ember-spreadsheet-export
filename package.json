@@ -96,12 +96,13 @@
     "@babel/helpers": "7.26.10",
     "@babel/runtime": "7.26.10",
     "ansi-html": "0.0.8",
+    "brace-expansion": "2.0.2",
     "braces": "3.0.3",
     "cross-spawn": "7.0.5",
     "got": "11.8.5",
     "micromatch": "4.0.8",
+    "on-headers": "1.1.0",
     "path-to-regexp": "0.1.12",
-    "brace-expansion": "2.0.2",
-    "on-headers": "1.1.0"
+    "tmp": "0.2.4"
   }
 }
