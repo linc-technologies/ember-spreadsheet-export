@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.16.3](https://github.com/linc-technologies/ember-spreadsheet-export/compare/ember-spreadsheet-export-v0.16.2...ember-spreadsheet-export-v0.16.3) (2025-11-09)
+
+
+### Bug Fixes
+
+* resolve @babel/helpers to 7.26.10 ([fbd2229](https://github.com/linc-technologies/ember-spreadsheet-export/commit/fbd2229ceec21b665a456d2f3bd4c349e8aaf845))
+* resolve @babel/runtime to 7.26.10 ([3018ecc](https://github.com/linc-technologies/ember-spreadsheet-export/commit/3018ecc7daf76e5b9f63d6511517017ed517e2d3))
+* resolve tmp to 0.2.4 ([fd70e56](https://github.com/linc-technologies/ember-spreadsheet-export/commit/fd70e5625d2c8caaa6f6e8bee5cc2d7c38530cf8))
+
 ## [0.16.2](https://github.com/linc-technologies/ember-spreadsheet-export/compare/ember-spreadsheet-export-v0.16.1...ember-spreadsheet-export-v0.16.2) (2025-10-12)
 
 
